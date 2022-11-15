@@ -27,7 +27,7 @@ today = str(datetime.now().date())
 for item in creator:
     item['dt'] = today
     try:
-        command = Insert("`{0}`".format("order"))
+        command = Insert("`{0}`".format("user_order"))
         for key in item:
             command.put(key, item[key])
 
